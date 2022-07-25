@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Client Data</title>
+</head>
+<body>
+    <h1>Please fill data in the form below:</h1>
+    <form method="POST" action="/post">
+        <label>User Name:<input type="text" name="OwnerName" required></label>
+        <span class="form-group">
+            <select id="dropdown" name="Location" class="form-control" required>
+              <option disabled selected value>Vehicle Location</option>
+              <option value="Jaffna">Jaffna</option>
+              <option value="Achchuveli">Achchuveli</option>
+              <option value="Maanippai">Maanippai</option>
+              <option value="Kopay">Kopay</option>
+              <option value="Thellippalai">Thellippalai</option>
+            </select>
+        </span>
+
+        <br>
+        <label>Email:<input type="text" name="client-email" required></label>
+        <br>
+        <label>Password:<input type="password" name="Password" required></label><br>
+        <label>Company Name:<input type="text" name="Company Name" required></label><br>
+        <label>Name:<input type="text" name="Name" required></label>
+        <div class="form-group">
+            <label id="number-label" for="number"> Age <span class="clue"> (optional) </span></label>
+            <input type="number" name="age" id="number" min="10" max="99" class="form-control"  />
+        </div><br>
+        <label>Phone:<input type="number" name="number" required></label><br>
+        <label>Address:<br><textarea name="Address"></textarea></label>
+        <br>
+        <input type="submit" value="Create account">
+    </form>
+</body>
+</html>
